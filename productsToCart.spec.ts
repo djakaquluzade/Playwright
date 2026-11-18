@@ -10,4 +10,5 @@ test('Add products to cart', async ({ page }) => {
   await LoginPage.loginUser(userInfo);
   await ProductsPage.goToProductsPage();
   await ProductsPage.addToCart(product1);
+  await LoginPage.deleteUser();
 });
